@@ -1,0 +1,384 @@
+@charset "utf-8";
+/* 初始化 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,input,button,p,img { margin:0; padding:0;	font-family: "微软雅黑"; }
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+
+
+/* 头部 */
+#header {           
+	width: 100%;
+	min-width: 1920px;
+	background-color: #151515;
+}
+
+#header .header-con {
+	width: 1920px;
+	background-color: #151515;
+	height: 61px;
+	margin: 0 auto;
+}
+
+
+#header .header-con h1{
+	background: url("imgs/logo.png") no-repeat;
+	font-size: 12px;
+	width: 148px;
+	height: 61px;
+	float: left;
+	text-indent: -9999px;
+	margin-left: 415px;
+}
+
+#header .header-con h2{
+	background: url("imgs/tel.png") no-repeat;
+	font-size: 12px;
+	width: 177px;
+	height: 61px;
+	float: right;
+	text-indent: -9999px;
+	margin-right: 415px;
+}
+
+#header .header-con ul {
+	float: right;
+	background-image: #666;
+	margin-right: 70px;
+}
+
+#header .header-con ul li {
+	display: inline-block;
+	color: #ddd;
+	height: 61px;
+	line-height: 57px;
+	width: 110px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#header .header-con a:hover li {
+	background-color: #ddd;
+	color: #151515;
+}
+
+
+
+
+/* 主体 */
+#container {
+	width: 1920px;
+	margin: 0 auto;
+}
+
+/* mas部分 */
+#mas {
+	background: url("imgs/mas.png");
+	width: 1920px;
+	height: 550px;
+}
+
+/* apply部分 */
+#apply {
+	width: 1920px;
+	height: 515px;
+	background: url("imgs/apply.png");
+	position: relative;
+
+}
+
+#apply .apply-reg {
+	width: 241px;
+	height: 230px;
+	position: absolute;
+	right: 520px;
+	top: 140px;
+	text-align: center;
+}
+
+#apply .inputtext  {   
+	border: 2px solid #ddd;
+	margin: 0 0 15px 0;
+	font-size: 12px;
+	width: 239px;
+	height: 40px;
+	text-indent: 5px;
+	line-height: 40px;
+} 
+
+#apply .apply-reg button {
+	width: 243px;
+	height: 40px;
+	background-color: #f15518;
+	border:none;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#apply .apply-reg button:active {
+	background-color: #ff5518;
+}
+
+/* design部分 */
+#design {
+	width: 1920px;
+	height: 880px;
+	background: url("imgs/gmz.png")  no-repeat center 10px;
+	text-align: center;
+	position: relative;
+	padding: 100px 0 0 0;
+}
+
+
+
+#design .design-txt p{
+	height: 30;
+	font-size:13px;
+}
+
+#design .design-container{
+	width: 1120px;
+	height: 670px;
+	margin: 50px auto 0;
+	position: relative;
+	left: 10px;
+}
+
+#design .design-container li {
+	float: left;
+	margin:0 7px 7px 0;
+	width: 214px;
+	height: 330px;
+	position: relative;
+	cursor: pointer;
+}
+
+#design .design-container .pic-top{
+	width: 214px;
+	height: 330px;
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 2;
+}
+
+#design .design-container .pic-bot{
+	width: 214px;
+	height: 330px;
+	background: red;
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 1;
+	filter:alpha(opacity=90);
+	opacity:0.9;
+}
+
+#design .design-btn {
+	position: absolute;
+	left: 750px;
+	top: 890px;
+}
+
+/* case部分 */
+#case {
+	width: 1920px;
+	height: 480px;
+}
+
+#case .case-pic{
+	width: 1077px;
+	height: 400px;
+	border: 1px solid black;
+	margin:0 auto;
+	padding: 10px;
+	position:relative;
+	cursor: pointer;
+}
+
+#case .case-pic img{
+	width: 1077px;
+	height: 400px;	
+	position: absolute;
+}
+
+
+
+/* sign部分 */
+#sign {
+	width: 1920px;
+	height: 700px;
+	position: relative;
+}
+
+#sign .sign-pic{
+	width: 1190px;
+	height: 570px;
+	margin: 20px auto 0;
+	text-align: center;
+}
+
+#sign .sign-pic .pics {
+	width: 256px;
+	height: 162px;
+	padding: 0 14px 21px 14px;
+	background: #eee;
+	display: inline-block;
+
+}
+
+#sign .sign-pic .pics img{
+	display: none;
+}
+
+#sign .sign-pic .pics:hover img {
+	display: block;
+	cursor: pointer;
+}
+
+#sign .pics.s-1 {background:url("imgs/loupan/1-1.jpg") no-repeat center top;  }
+#sign .pics.s-2 {background:url("imgs/loupan/1-2.jpg") no-repeat center top;  }
+#sign .pics.s-3 {background:url("imgs/loupan/1-3.jpg") no-repeat center top;  }
+#sign .pics.s-4 {background:url("imgs/loupan/1-4.jpg") no-repeat center top;  }
+#sign .pics.s-5 {background:url("imgs/loupan/2-1.jpg") no-repeat center top;  }
+#sign .pics.s-6 {background:url("imgs/loupan/2-2.jpg") no-repeat center top;  }
+#sign .pics.s-7 {background:url("imgs/loupan/2-3.jpg") no-repeat center top;  }
+#sign .pics.s-8 {background:url("imgs/loupan/2-4.jpg") no-repeat center top;  }
+#sign .pics.s-9 {background:url("imgs/loupan/3-1.jpg") no-repeat center top;  }
+#sign .pics.s-10 {background:url("imgs/loupan/3-2.jpg") no-repeat center top;  }
+#sign .pics.s-11 {background:url("imgs/loupan/3-3.jpg") no-repeat center top;  }
+#sign .pics.s-12 {background:url("imgs/loupan/3-4.jpg") no-repeat center top;  }
+
+#sign .sign-btn{
+	position: absolute;
+	top: 600px;
+	left: 770px;
+}
+/* pk部分 */
+
+#pk {
+	width: 1920px;
+	height: 916px;
+	background: url("imgs/pk.png");
+	position: relative;
+}
+
+#pk .pk-btn {
+	position: absolute;
+	left: 750px;
+	top: 800px;
+}
+
+/* live部分 */
+
+#live {
+	width: 1920px;
+	height: 835px;
+	background: url("imgs/live.png");	
+	position: relative;
+}
+
+#live .live-btn {
+	position: absolute;
+	left: 750px;
+	top: 750px;
+}
+
+/* honor部分 */
+
+#honor {
+	width: 1920px;
+	height: 705px;
+	background: url("imgs/honor.png");
+	position: relative;	
+}	
+
+#honor .honor-btn {
+	position: absolute;
+	left: 750px;
+	top: 600px;
+}
+
+/* reg部分 */
+
+#reg {
+	width: 1920px;
+	height: 523px;
+	background: url("imgs/reg.png");	
+	position: relative;
+}
+
+#reg .reg-reg {
+	position: absolute;
+	left: 400px;
+	top: 180px;
+}
+
+#reg  .bottext{
+	border: 2px solid #fff;
+	height: 30px;
+	line-height: 30px;
+	width: 230px;
+	margin-right: 10px;
+	background-color: transparent;
+	color: #fff;
+	text-indent:5px;
+}
+
+#reg button {
+	width: 130px;
+	height: 36px;
+	background-color: #fdc111;
+	border:none;
+	text-align: center;
+	color: #000;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+#reg button:active {
+	background-color: #FFD762;
+}
+
+/* 按钮组 */
+.dbtnl {
+	background-color: #ff5522;
+	border:none;
+	width: 180px;
+	height: 36px;
+	color: #fff;
+	font-size: 15px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.dbtnl:active {
+	background-color: #FE8A67;	
+}
+
+.dbtnr {
+	background-color: #ffcc33;
+	border:none;
+	color: #000;
+	font-size: 15px;
+	width: 180px;
+	height: 36px;
+	cursor: pointer;
+}
+
+.dbtnr:active {
+	background-color: #FFDD77;	
+}
+
+/* 解决ie不兼容placeholder样式 */
+.placeholder {
+	color: #666;
+}
